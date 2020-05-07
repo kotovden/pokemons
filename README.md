@@ -1,4 +1,0 @@
-"# pokemons" 
-"# pokemons" 
-"# pokemons" 
-"# pokemons" 
