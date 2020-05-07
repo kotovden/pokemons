@@ -1,6 +1,5 @@
 export interface AbilityListItem {
   ability: object;
-  is_hidden: boolean;
   slot: number;
 }
 export interface Pokemon {

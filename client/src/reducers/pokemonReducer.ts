@@ -1,12 +1,12 @@
 import {
   LOADED_POKEMONS,
-  FILTER_POKEMONS
+  FILTER_POKEMONS,
 } from '../constants/pokemonConstants';
 
 const initialState = {
   pokemonList: [],
   filteredPokemonList: [],
-  searchValue: ''
+  searchValue: '',
 };
 
 const pokemonReducer = (state: any = initialState, action: any) => {
