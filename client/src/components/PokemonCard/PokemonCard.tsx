@@ -34,7 +34,7 @@ const PokemonCard = (props: any) => {
         <Row>
           <Col span={4}>
             <img
-              style={{ width: 300 }}
+              style={{ width: "100%" }}
               alt="example"
               src={
                 (pokemonInfo
