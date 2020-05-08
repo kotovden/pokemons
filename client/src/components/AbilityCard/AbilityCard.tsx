@@ -43,17 +43,13 @@ const AbilityCard = () => {
       <Card className="AbilityCard">
         <Breadcrumb>
           <Breadcrumb.Item>
-            <a
-              role="button"
-              tabIndex={0}
+            <button className="link-button ant-breadcrumb-link"
               onClick={() => {
                 history.goBack();
               }}
-              onKeyDown={() => {}}
             >
-              {' '}
               {'< Назад'}
-            </a>
+            </button>
           </Breadcrumb.Item>
         </Breadcrumb>
         <br />

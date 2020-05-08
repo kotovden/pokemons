@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, {useEffect, useState} from 'react';
 import { Switch, Route, withRouter } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { filterPokemonListByName, loadData } from './actions/PokemonActions';
@@ -6,10 +6,13 @@ import AbilityCard from './components/AbilityCard/AbilityCard';
 import PokemonList from './components/PokemonList/PokemonList';
 import PokemonCard from './components/PokemonCard/PokemonCard';
 
-const Layout = (props: any) => {
+const Layout = (props:any) => {
+  const [loaded, setLoaded] = useState(false);
+  const { loadData } = props;
   useEffect(() => {
-    props.loadData();
-  }, [props]);
+    loadData();
+    setLoaded(true);
+  }, [loaded, loadData]);
   const pokemonListByName = props;
   return (
     <div>

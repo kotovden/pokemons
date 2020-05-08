@@ -55,20 +55,18 @@ const PokemonCard = (props: any) => {
                   {item === 'abilities'
                   && pokemonInfo[item].map((arrItem: any) => (
                     <div key={arrItem.ability.name}>
-                      <a
-                        role="button"
-                        tabIndex={0}
+                      <button
+                        className="link-button"
                         onClick={() => {
                           history.push({
                             pathname: `/ability/${arrItem.ability.name}`,
                             state: { url: arrItem.ability.url },
                           });
                         }}
-                        onKeyDown={() => {}}
-                        style={{ cursor: 'pointer', marginRight: 5 }}
+                        style={{ marginRight: 5 }}
                       >
                         {arrItem.ability.name}
-                      </a>
+                      </button>
                     </div>
                   ))}
                   {typeof pokemonInfo[item] === 'string'
