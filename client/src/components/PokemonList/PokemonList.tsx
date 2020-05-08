@@ -29,7 +29,7 @@ const PokemonList = (props: any) => {
           {filteredPokemonList
           && filteredPokemonList.length > 0
           && filteredPokemonList.map((pokemon: Pokemon) => (
-            <Col span={4} key={pokemon.name}>
+            <Col span={4} xs={16} sm={12} md={8} xl={4} key={pokemon.name}>
               <Card
                 hoverable
                 onClick={() => {

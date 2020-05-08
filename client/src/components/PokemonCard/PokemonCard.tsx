@@ -32,7 +32,7 @@ const PokemonCard = (props: any) => {
         <br />
         <h1 className="pokemon-name">{pokemonInfo.name}</h1>
         <Row>
-          <Col span={4}>
+          <Col xs={12} sm={12} md={8} xl={4}   span={4}>
             <img
               style={{ width: "100%" }}
               alt="example"
