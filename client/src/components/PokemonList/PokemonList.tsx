@@ -35,7 +35,7 @@ const PokemonList = (props: any) => {
                 onClick={() => {
                   history.push(`/pokemon/${pokemon.name}`);
                 }}
-                style={{ width: 300, marginBottom: 30 }}
+                style={{ marginBottom: 30 }}
                 cover={
                   <img alt="example" src={pokemon.sprites.front_default} />
                 }
